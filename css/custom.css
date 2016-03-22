@@ -1,3 +1,9 @@
 .cat-tree-image{
   width: 240px;
 }
+
+.category{
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+}

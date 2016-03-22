@@ -23,9 +23,25 @@
     <![endif]-->
   </head>
   <body ng-controller="catTrees">
-  <div ng-repeat="catTree in catTowers">
-    <h3>{{catTree.title}}</h3>
-    <p><img class="cat-tree-image" src={{catTree.image}} /></p>
+  <div class="container">
+    <div class="category" ng-click="showTrees = !showTrees">Crazy Cat Trees</div>
+    <div ng-show="showTrees" ng-repeat="catTree in catTowers">
+      <h3>{{catTree.title}}</h3>
+      <p><img class="cat-tree-image" src={{catTree.image}} /></p>
+    </div>
+
+    <div class="category" ng-click="showShelf = !showShelf">Crazy Cat Shelves</div>
+    <div ng-show="showShelf" ng-repeat="catShelf in catShelfs">
+      <h3>{{catShelf.title}}</h3>
+      <p><img class="cat-tree-image" src={{catShelf.image}} /></p>
+    </div>
+
+    <div class="category" ng-click="showCondo = !showCondo">Crazy Cat Condos</div>
+    <div ng-show="showCondo" ng-repeat="catCondo in catCondos">
+      <h3>{{catCondo.title}}</h3>
+      <p><img class="cat-tree-image" src={{catCondo.image}} /></p>
+    </div>
+
   </div>
   </body>
 
