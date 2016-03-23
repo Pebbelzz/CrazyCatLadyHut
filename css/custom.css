@@ -1,9 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+
 .cat-tree-image{
   width: 240px;
 }
 
 .category{
-  font-size: 30px;
   font-weight: bold;
   font-style: italic;
+}
+
+.header{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 60px;
+  background: url("../images/header-back.jpg")center;
+  height: 160px;
+  line-height: 160px;
+  color: white;
 }
