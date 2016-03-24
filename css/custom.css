@@ -13,7 +13,19 @@
   font-family: 'Permanent Marker', cursive;
   font-size: 60px;
   background: url("../images/header-back.jpg")center;
-  height: 160px;
-  line-height: 160px;
+  height: 180px;
+  line-height: 180px;
   color: white;
+  text-align: right;
+}
+.nav{
+  width: 100%;
+}
+
+.category{
+  width: 33%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 25px;
+  text-align: center;
 }

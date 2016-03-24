@@ -29,28 +29,34 @@
       </div>
     </div>
 
+    <nav class="navbar">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li class="category" ng-click="showTrees = !showTrees">Crazy Cat Trees</li>
+          <li class="category" ng-click="showShelf = !showShelf">Crazy Cat Shelves</li>
+          <li class="category" ng-click="showCondo = !showCondo">Crazy Cat Condos</li>
+        </ul>
+      </div>
+    </nav>
+
     <div class="container">
-      <div class="row">
-        <div class="category col-md-3" ng-click="showTrees = !showTrees">Crazy Cat Trees</div>
-        <div class="col-md-9" ng-show="showTrees" ng-repeat="catTree in catTowers">
+        <div ng-show="showTrees" ng-repeat="catTree in catTowers">
           <h4>{{catTree.title}}</h4>
           <p><img class="cat-tree-image" src={{catTree.image}} /></p>
         </div>
-      </div>
 
-      <div class="category" ng-click="showShelf = !showShelf">Crazy Cat Shelves</div>
       <div ng-show="showShelf" ng-repeat="catShelf in catShelfs">
         <h4>{{catShelf.title}}</h4>
         <p><img class="cat-tree-image" src={{catShelf.image}} /></p>
       </div>
 
-      <div class="category" ng-click="showCondo = !showCondo">Crazy Cat Condos</div>
       <div ng-show="showCondo" ng-repeat="catCondo in catCondos">
         <h4>{{catCondo.title}}</h4>
         <p><img class="cat-tree-image" src={{catCondo.image}} /></p>
       </div>
-
     </div>
+
+
   </body>
 
   </body>
