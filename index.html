@@ -40,23 +40,44 @@
              showShelf = false; showCondo = !showCondo;">Crazy Cat Condos</li>
         </ul>
       </div>
+      <div class="col-md-3"></div>
     </nav>
 
     <div class="container">
         <div ng-show="showTrees" ng-repeat="catTree in catTowers">
-          <h4>{{catTree.title}}</h4>
-          <p><img class="cat-tree-image" src={{catTree.image}} /></p>
+          <div class="row">
+            <div class="col-md-2">
+              <img class="cat-tree-image" src={{catTree.image}} />
+            </div>
+            <div class="col-md-7">
+              <h4>{{catTree.title}}</h4>
+            </div>
+            <div class="col-md-3"></div>
+          </div>
         </div>
 
       <div ng-show="showShelf" ng-repeat="catShelf in catShelfs">
-
-        <img class="cat-tree-image" src={{catShelf.image}} />
-        <h4>{{catShelf.title}}</h4>
+        <div class="row">
+          <div class="col-md-2">
+            <img class="cat-tree-image" src={{catShelf.image}} />
+          </div>
+          <div class="col-md-7">
+            <h4>{{catShelf.title}}</h4>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
       </div>
 
       <div ng-show="showCondo" ng-repeat="catCondo in catCondos">
-        <h4>{{catCondo.title}}</h4>
-        <p><img class="cat-tree-image" src={{catCondo.image}} /></p>
+        <div class="row">
+          <div class="col-md-2">
+            <img class="cat-tree-image" src={{catCondo.image}} />
+          </div>
+          <div class="col-md-7">
+            <h4>{{catCondo.title}}</h4>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
       </div>
     </div>
 
