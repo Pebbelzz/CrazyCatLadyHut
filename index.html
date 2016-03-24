@@ -32,12 +32,12 @@
     <nav class="navbar">
       <div class="container">
         <ul class="nav navbar-nav">
-          <li class="category" ng-click="showTrees = true;
+          <li class="category" ng-click="showTrees = !showTrees;
              showShelf = false; showCondo = false;">Crazy Cat Trees</li>
           <li class="category" ng-click="showTrees = false;
-             showShelf = true; showCondo = false;">Crazy Cat Shelves</li>
+             showShelf = !showShelf; showCondo = false;">Crazy Cat Shelves</li>
           <li class="category" ng-click="showTrees = false;
-             showShelf = false; showCondo = true;">Crazy Cat Condos</li>
+             showShelf = false; showCondo = !showCondo;">Crazy Cat Condos</li>
         </ul>
       </div>
     </nav>
@@ -49,8 +49,9 @@
         </div>
 
       <div ng-show="showShelf" ng-repeat="catShelf in catShelfs">
+
+        <img class="cat-tree-image" src={{catShelf.image}} />
         <h4>{{catShelf.title}}</h4>
-        <p><img class="cat-tree-image" src={{catShelf.image}} /></p>
       </div>
 
       <div ng-show="showCondo" ng-repeat="catCondo in catCondos">
