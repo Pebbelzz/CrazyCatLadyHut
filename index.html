@@ -32,9 +32,12 @@
     <nav class="navbar">
       <div class="container">
         <ul class="nav navbar-nav">
-          <li class="category" ng-click="showTrees = !showTrees">Crazy Cat Trees</li>
-          <li class="category" ng-click="showShelf = !showShelf">Crazy Cat Shelves</li>
-          <li class="category" ng-click="showCondo = !showCondo">Crazy Cat Condos</li>
+          <li class="category" ng-click="showTrees = true;
+             showShelf = false; showCondo = false;">Crazy Cat Trees</li>
+          <li class="category" ng-click="showTrees = false;
+             showShelf = true; showCondo = false;">Crazy Cat Shelves</li>
+          <li class="category" ng-click="showTrees = false;
+             showShelf = false; showCondo = true;">Crazy Cat Condos</li>
         </ul>
       </div>
     </nav>
