@@ -1,12 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
 
+.category, .header{
+  font-family: 'Permanent Marker', cursive;
+}
 
-.cat-tree-image{
-  height: 175px;
+.category > a{
+  font-size: 18px;
+  color: black;
 }
 
 .header{
-  font-family: 'Permanent Marker', cursive;
   font-size: 60px;
   background: url("../images/header-back.jpg")center;
   height: 180px;
@@ -18,6 +21,10 @@
 .productRow{
   border-bottom: solid 2px #cccccc;
   margin: 10px 0;
+}
+
+.cat-tree-image{
+  height: 175px;
 }
 
 .productImage{
