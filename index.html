@@ -29,52 +29,58 @@
       </div>
     </div>
 
-    <nav class="navbar">
-      <div class="container">
-        <ul class="nav navbar-nav">
+    <nav class="container">
+        <ul class="nav nav-pills nav-stacked">
           <li class="category" ng-click="showTrees = !showTrees;
-             showShelf = false; showCondo = false;">Crazy Cat Trees</li>
+             showShelf = false; showCondo = false;">
+             <a href="#catTrees">Crazy Cat Trees</a>
+           </li>
           <li class="category" ng-click="showTrees = false;
-             showShelf = !showShelf; showCondo = false;">Crazy Cat Shelves</li>
+             showShelf = !showShelf; showCondo = false;">
+             <a href="#catShelf">Crazy Cat Shelves</a>
+          </li>
           <li class="category" ng-click="showTrees = false;
-             showShelf = false; showCondo = !showCondo;">Crazy Cat Condos</li>
+             showShelf = false; showCondo = !showCondo;">
+             <a href="#catCondos">Crazy Cat Condos</a>
+           </li>
         </ul>
-      </div>
-      <div class="col-md-3"></div>
     </nav>
 
     <div class="container">
         <div ng-show="showTrees" ng-repeat="catTree in catTowers">
-          <div class="row">
+          <div class="row productRow">
             <div class="col-md-2">
-              <img class="cat-tree-image" src={{catTree.image}} />
+              <img class="cat-tree-image productImage" src={{catTree.image}} />
             </div>
             <div class="col-md-7">
               <h4>{{catTree.title}}</h4>
+              <p class="col-md-12">{{catTree.description}}</p>
             </div>
             <div class="col-md-3"></div>
           </div>
         </div>
 
       <div ng-show="showShelf" ng-repeat="catShelf in catShelfs">
-        <div class="row">
+        <div class="row productRow">
           <div class="col-md-2">
-            <img class="cat-tree-image" src={{catShelf.image}} />
+            <img class="cat-tree-image productImage" src={{catShelf.image}} />
           </div>
           <div class="col-md-7">
             <h4>{{catShelf.title}}</h4>
+            <p class="col-md-12">{{catShelf.description}}</p>
           </div>
           <div class="col-md-3"></div>
         </div>
       </div>
 
       <div ng-show="showCondo" ng-repeat="catCondo in catCondos">
-        <div class="row">
+        <div class="row productRow">
           <div class="col-md-2">
-            <img class="cat-tree-image" src={{catCondo.image}} />
+            <img class="cat-tree-image productImage" src={{catCondo.image}} />
           </div>
           <div class="col-md-7">
             <h4>{{catCondo.title}}</h4>
+            <p class="col-md-12">{{catCondo.description}}</p>
           </div>
           <div class="col-md-3"></div>
         </div>
