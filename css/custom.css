@@ -27,3 +27,12 @@
 sidebar{
  height: 100%;
 }
+
+
+.moreInfo{
+  vertical-align: middle;
+}
+
+.buttonInfo{
+  line-height: 155px;
+}
