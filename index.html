@@ -29,24 +29,28 @@
       </div>
     </div>
 
-    <nav class="container">
-        <ul class="nav nav-pills nav-stacked">
-          <li class="category" ng-click="showTrees = !showTrees;
-             showShelf = false; showCondo = false;">
-             <a href="#catTrees">Crazy Cat Trees</a>
-           </li>
-          <li class="category" ng-click="showTrees = false;
-             showShelf = !showShelf; showCondo = false;">
-             <a href="#catShelf">Crazy Cat Shelves</a>
-          </li>
-          <li class="category" ng-click="showTrees = false;
-             showShelf = false; showCondo = !showCondo;">
-             <a href="#catCondos">Crazy Cat Condos</a>
-           </li>
-        </ul>
-    </nav>
-
     <div class="container">
+      <sidebar class="col-md-2">
+        <nav layout="vertical">
+            <ul class="nav nav-pills nav-stacked">
+              <li class="category" ng-click="showTrees = !showTrees;
+                 showShelf = false; showCondo = false;">
+                 <a href="#catTrees">Crazy Cat Trees</a>
+               </li>
+              <li class="category" ng-click="showTrees = false;
+                 showShelf = !showShelf; showCondo = false;">
+                 <a href="#catShelf">Crazy Cat Shelves</a>
+              </li>
+              <li class="category" ng-click="showTrees = false;
+                 showShelf = false; showCondo = !showCondo;">
+                 <a href="#catCondos">Crazy Cat Condos</a>
+               </li>
+            </ul>
+        </nav>
+      </sidebar>
+
+
+      <div class="col-md-10">
         <div ng-show="showTrees" ng-repeat="catTree in catTowers">
           <div class="row productRow">
             <div class="col-md-2">
@@ -86,7 +90,6 @@
         </div>
       </div>
     </div>
-
-
+  </div>
   </body>
 </html>
