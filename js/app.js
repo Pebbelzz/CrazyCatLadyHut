@@ -102,6 +102,26 @@ app.controller('catTrees', function($scope){
       image: "images/cat-castle.jpg",
       description: "The So Darling Cat Castle would make an ideal addition " +
       "to any feline kingdom."
+    },
+    {
+      link:"http://www.shareasale.com/r.cfm?u=96241&b=5997&m=2072&afftrack=&urllink=www%2Ecatsplay%2Ecom%2Flighthouse%2Dkitty%2Dtower",
+      title: "Lighthouse Cat Tower",
+      image: "images/lighthouse-cat-tower.jpg",
+      description: "At just over 6' tall, this beautiful lighthouse tower has 4 " +
+      "levels and a lookout area at its top. Each ceiling has an opening so " +
+      "that your cats can move up and down the tower. They can even sit inside " +
+      "the top level and look out the windows! A wide base prevents the unit " +
+      "from toppling. It is available in your choice of carpet colors"
+    },
+    {
+      link: "http://www.shareasale.com/r.cfm?u=96241&b=5997&m=2072&afftrack=&urllink=www%2Ecatsplay%2Ecom%2Fhickory%2Ddickory%2Dcat%2Dtower",
+      title: "Hickory Dickory Cat Tower",
+      image: "images/cat-clock-tower.jpg",
+      description: "The decorative base houses a recess for a replaceable " +
+      "cardboard scratch pad (included), and the carpeted pendulum serves " +
+      "as a climbing post from the top down.  Angled, carpeted steps make " +
+      "ascent quick and easy for your cat, with top perch where kitty can " +
+      "stand guard for any rodents during the night."
     }
   ];
 
