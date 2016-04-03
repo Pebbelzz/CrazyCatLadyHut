@@ -43,3 +43,7 @@ sidebar{
 .buttonInfo{
   line-height: 155px;
 }
+
+ul.slidejs-pagination{
+  list-style: none;
+}

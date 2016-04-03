@@ -8,11 +8,13 @@
     <title>Crazy Cat Lady Hut</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/catlogo.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <script src="js/jquery-2.2.2.min.js"></script>
     <script src="js/angular.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.slides.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/app.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -33,15 +35,19 @@
       <sidebar class="col-md-2">
         <nav layout="vertical">
             <ul class="nav nav-pills nav-stacked">
-              <li class="category" ng-click="showTrees = !showTrees;
+              <li class="category" ng-click="showHome = !showHome; showTrees=false;
+                 showShelf = false; showCondo = false;">
+                 <a href="#Home">Home</a>
+               </li>
+              <li class="category" ng-click="showHome = true; showTrees = !showTrees;
                  showShelf = false; showCondo = false;">
                  <a href="#catTrees">Cat Trees</a>
                </li>
-              <li class="category" ng-click="showTrees = false;
+              <li class="category" ng-click="showHome = true; showTrees = false;
                  showShelf = !showShelf; showCondo = false;">
                  <a href="#catShelf">Cat Shelves</a>
               </li>
-              <li class="category" ng-click="showTrees = false;
+              <li class="category" ng-click="showHome = true; showTrees = false;
                  showShelf = false; showCondo = !showCondo;">
                  <a href="#catCondos">Cat Condos</a>
                </li>
@@ -49,6 +55,15 @@
         </nav>
       </sidebar>
 
+      <div class="col-md-10">
+        <div ng-hide="showHome">
+          <div id="slides" class="col-md-8 col-md-offset-2">
+            <img src="images/mario-cat-wallshelf.jpg">
+            <img src="images/cat-mouse-house.jpg">
+            <img src="images/luxury-cat-tree.jpg">
+          </div>
+        </div>
+      </div>
 
       <div class="col-md-10">
         <div ng-show="showTrees" ng-repeat="catTree in catTowers">
