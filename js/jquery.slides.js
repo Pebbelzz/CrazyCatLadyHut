@@ -137,7 +137,10 @@
         _this.stop(true);
         return _this.previous(_this.options.navigation.effect);
       });
-      if (this.options.play.active) {
+
+      //for play and stop links --- disabled
+
+      /*if (this.options.play.active) {
         playButton = $("<a>", {
           "class": "slidesjs-play slidesjs-navigation",
           href: "#",
@@ -163,7 +166,7 @@
             display: "none"
           });
         }
-      }
+      } */
       if (this.options.pagination.active) {
         pagination = $("<ul>", {
           "class": "slidesjs-pagination"

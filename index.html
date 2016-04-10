@@ -58,10 +58,22 @@
       <div class="col-md-10">
         <div ng-hide="showHome">
           <div id="slides" class="col-md-8 col-md-offset-2">
-            <img src="images/silk-multi-level.jpg">
-            <img src="images/cat-mouse-house.jpg">
-            <img src="images/purple-passion.jpg">
-            <img src="images/cat-castle.jpg">
+            <a href="#catTrees" ng-click="showHome = true; showTrees = !showTrees;
+               showShelf = false; showCondo = false;" >
+               <img src="images/silk-multi-level.jpg">
+            </a>
+            <a href="#catCondos" ng-click="showHome = true; showTrees = false;
+               showShelf = false; showCondo = !showCondo;" >
+                <img src="images/cat-mouse-house.jpg">
+            </a>
+            <a href="#catCondos" ng-click="showHome = true; showTrees = false;
+               showShelf = false; showCondo = !showCondo;" >
+              <img src="images/purple-passion.jpg">
+            </a>
+            <a href="#catCondos" ng-click="showHome = true; showTrees = false;
+               showShelf = false; showCondo = !showCondo;" >
+              <img src="images/cat-castle.jpg">
+            </a>
           </div>
         </div>
       </div>
