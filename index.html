@@ -36,21 +36,25 @@
         <nav layout="vertical">
             <ul class="nav nav-pills nav-stacked">
               <li class="category" ng-click="showHome = !showHome; showTrees=false;
-                 showShelf = false; showCondo = false;">
+                 showShelf = false; showCondo = false; showGrumpy = false;">
                  <a href="#Home">Home</a>
                </li>
-              <li class="category" ng-click="showHome = true; showTrees = !showTrees;
-                 showShelf = false; showCondo = false;">
+              <li class="category" ng-click="showHome = true; showTrees = true;
+                 showShelf = false; showCondo = false; showGrumpy = false;">
                  <a href="#catTrees">Cat Trees</a>
                </li>
               <li class="category" ng-click="showHome = true; showTrees = false;
-                 showShelf = !showShelf; showCondo = false;">
+                 showShelf = true; showCondo = false; showGrumpy = false;">
                  <a href="#catShelf">Cat Shelves</a>
               </li>
               <li class="category" ng-click="showHome = true; showTrees = false;
-                 showShelf = false; showCondo = !showCondo;">
+                 showShelf = false; showCondo = true; showGrumpy = false;">
                  <a href="#catCondos">Cat Condos</a>
                </li>
+               <li class="category" ng-click="showHome = true; showTrees = false;
+                  showShelf = false; showCondo = false; showGrumpy = true;">
+                  <a href="#catCondos">Grumpy Cat</a>
+                </li>
             </ul>
         </nav>
       </sidebar>
@@ -123,6 +127,23 @@
           </div>
         </div>
       </div>
+
+      <div ng-show="showGrumpy" ng-repeat="grumpyCat in grumpyCats">
+        <div class="row productRow">
+          <div class="col-md-3">
+            <img class="cat-tree-image productImage" src={{grumpyCat.image}} />
+          </div>
+          <div class="col-md-6">
+            <h4>{{grumpyCat.title}}</h4>
+            <p class="col-md-12">{{grumpyCat.description}}</p>
+          </div>
+          <div class="col-md-3 buttonInfo">
+            <a class="btn btn-primary moreInfo" href="{{grumpyCat.link}}" target="_blank">More Info</a>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   </div>
   </body>

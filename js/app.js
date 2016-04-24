@@ -125,5 +125,59 @@ app.controller('catTrees', function($scope){
     }
   ];
 
-
+  $scope.grumpyCats = [
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=26254&userID=96241&productID=557700517",
+      title: 'Grumpy Cat This Sinks Candle',
+      image: "images/grumpy-candle.jpg",
+      description: 'Vanilla Candle is still not good enough for Grumpy ' +
+      'Cat! She proclaims This Stinks!'
+    },
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=26254&userID=96241&productID=555026261",
+      title: "Grumpy Cat Hat",
+      image: "http://www.stupid.com/assets/images/grumpy_cat_laplander_1_thumbnail.jpg",
+      description: ""
+    },
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=17483&userID=96241&productID=575756027",
+      title: "Grumpy Cat Calendar",
+      image: "http://www.calendars.com/img/p/135/201600002625.jpg",
+      description: "Celebrate (or wallow in) a year of grumpiness with Grumpy Cat's grouchy " +
+      "commentary and signature frown with Grumpy Cat 2016 Wall Calendar. "
+    },
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=26254&userID=96241&productID=549988162",
+      title: "Grumpy Cat Space Leggings",
+      image: "http://www.stupid.com/assets/images/grumpy-cat-space-leggings--small_thumbnail.jpg",
+      description: "These awesome Grumpy Cat Space Leggings are out of this world! Yet she is still not impressed with the wonders of space."
+    },
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=26254&userID=96241&productID=551869432",
+      title: "Grumpy Cat No! Socks",
+      image: "http://www.stupid.com/assets/images/grumpy_cat_no_socks_1_thumbnail.jpg",
+      description: "Lil' Grumpy Cat will be with you all day, pretty much telling everyone to BACK OFF when you wear these Socks"
+    },
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=26254&userID=96241&productID=553535037",
+      title: "Grumpy Cat Paper Dolls",
+      image: "http://www.stupid.com/assets/images/grumpy_cat_paper_dolls_1_thumbnail.jpg",
+      description: "Everyone knows Grumpy Cat and they know she hates just about everything. " +
+      "So when we saw these Paper Dolls featuring her and her sidekick, Pokey we knew the " +
+      " great clouds above her had just quadrupled. You can dress these two up in dozens " +
+      " of accessories, outfits, wigs, glasses, and so much more. "
+    },
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=26254&userID=96241&productID=525054932",
+      title: "Grumpy Cat Xmas Gift T-Shirt",
+      image: "http://www.stupid.com/assets/images/grumpy_cat_christmas_shirt_1_thumbnail.jpg",
+      description: "Grumpy Cat Christmas T-Shirt - Your gift is in the Litter Box "
+    },
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=26254&userID=96241&productID=620326030",
+      title: "Grumpy Cat Babydoll Shirt",
+      image: "http://www.stupid.com/assets/images/grumpy_kitty_babydoll_tshirt_1_thumbnail.jpg",
+      description: "Grumpy Cat's version of Soft Kitty for you to wear"
+    }
+  ];
 });
