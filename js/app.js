@@ -180,4 +180,41 @@ app.controller('catTrees', function($scope){
       description: "Grumpy Cat's version of Soft Kitty for you to wear"
     }
   ];
+
+  $scope.helloKittys = [
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=26254&userID=96241&productID=550918069",
+      title: "POP! Hello Kitty / KISS Starchild",
+      image: "http://www.stupid.com/assets/images/pop_vinyl_figure_starchild_1_thumbnail.jpg",
+      description: "Hello Kitty Pop! Vinyl version of the Rock superhero"
+    },
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=26254&userID=96241&productID=550918076",
+      title: "POP! Hello Kitty / KISS Catman",
+      image: "http://www.stupid.com/assets/images/pop_vinyl_figure_catman_1_thumbnail.jpg",
+      description: "Catman from KISS in Hello Kitty, Pop! Vinyl Figure"
+    },
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=26254&userID=96241&productID=536370842",
+      title: "Hello Kitty Ceramic Salt and Pepper Shaker Set",
+      image: "http://www.stupid.com/assets/images/hello_kitty_salt_and_pepper_shakers_1_thumbnail.jpg",
+      description: "Each hand painted Shaker is 3.25 x 2.75 x 2.75 and the perfect addition to any and every kitchen"
+    },
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=17483&userID=96241&productID=624924170",
+      title: "Hello Kitty Headphones",
+      image: "http://www.calendars.com/img/p/135/201500023146.jpg",
+      description: "Hello Kitty Headphones perfect for Hello Kitty fans. Compatible" +
+      "with all iPod, iPhone, MP3/MP4 players, audio/video devices and game systems."
+    },
+    {
+      link:"http://www.shareasale.com/m-pr.cfm?merchantID=17483&userID=96241&productID=598935584",
+      title: "Hello Kitty Shopper Tote",
+      image: "http://www.calendars.com/img/p/135/201600027549.jpg",
+      description: "Hello Kitty shopper tote is packable to save space. It " +
+      " folds and unfolds in seconds! The bag is made from 25% recycled " +
+      " materials. Wipes clean with a damp cloth."
+    }
+  ];
+
 });

@@ -36,25 +36,35 @@
         <nav layout="vertical">
             <ul class="nav nav-pills nav-stacked">
               <li class="category" ng-click="showHome = !showHome; showTrees=false;
-                 showShelf = false; showCondo = false; showGrumpy = false;">
+                 showShelf = false; showCondo = false; showGrumpy = false;
+                 showHelloKitty = false;">
                  <a href="#Home">Home</a>
                </li>
               <li class="category" ng-click="showHome = true; showTrees = true;
-                 showShelf = false; showCondo = false; showGrumpy = false;">
+                 showShelf = false; showCondo = false; showGrumpy = false;
+                 showHelloKitty = false;">
                  <a href="#catTrees">Cat Trees</a>
                </li>
               <li class="category" ng-click="showHome = true; showTrees = false;
-                 showShelf = true; showCondo = false; showGrumpy = false;">
+                 showShelf = true; showCondo = false; showGrumpy = false;
+                 showHelloKitty = false;">
                  <a href="#catShelf">Cat Shelves</a>
               </li>
               <li class="category" ng-click="showHome = true; showTrees = false;
-                 showShelf = false; showCondo = true; showGrumpy = false;">
+                 showShelf = false; showCondo = true; showGrumpy = false;
+                 showHelloKitty = false;">
                  <a href="#catCondos">Cat Condos</a>
                </li>
                <li class="category" ng-click="showHome = true; showTrees = false;
-                  showShelf = false; showCondo = false; showGrumpy = true;">
+                  showShelf = false; showCondo = false; showGrumpy = true;
+                  showHelloKitty = false;">
                   <a href="#catCondos">Grumpy Cat</a>
                 </li>
+               <li class="category" ng-click="showHome = true; showTrees = false;
+                   showShelf = false; showCondo = false; showGrumpy = false;
+                   showhelloKitty = true;">
+                   <a href="#catCondos">Hello Kitty</a>
+               </li>
             </ul>
         </nav>
       </sidebar>
@@ -139,6 +149,21 @@
           </div>
           <div class="col-md-3 buttonInfo">
             <a class="btn btn-primary moreInfo" href="{{grumpyCat.link}}" target="_blank">More Info</a>
+          </div>
+        </div>
+      </div>
+
+      <div ng-show="showhelloKitty" ng-repeat="helloKitty in helloKittys">
+        <div class="row productRow">
+          <div class="col-md-3">
+            <img class="cat-tree-image productImage" src={{helloKitty.image}} />
+          </div>
+          <div class="col-md-6">
+            <h4>{{helloKitty.title}}</h4>
+            <p class="col-md-12">{{helloKitty.description}}</p>
+          </div>
+          <div class="col-md-3 buttonInfo">
+            <a class="btn btn-primary moreInfo" href="{{helloKitty.link}}" target="_blank">More Info</a>
           </div>
         </div>
       </div>
