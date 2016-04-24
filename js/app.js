@@ -217,4 +217,82 @@ app.controller('catTrees', function($scope){
     }
   ];
 
+  $scope.catNecklaces = [
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=10669&userID=96241&productID=555268439",
+      title: "Sterling Silver Cat Pendant with Purple Cubic Zircon",
+      image: "images/purple-cat-necklace.jpg",
+      description: "Purple Cat Pendant and Sterling Silver Necklace"
+    },
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=10669&userID=96241&productID=551302157",
+      title: "18K White Gold Cat with Scarf Diamond Pendant Necklace ",
+      image: "images/diamond-cat.jpg",
+      description: ""
+    },
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=26388&userID=96241&productID=587251502",
+      title: "Black Diamond Cat Necklace in Rhodium Plated Sterling Silver",
+      image: "images/black-diamond-cat.jpg",
+      description: "This black cat necklace features an aloof back-facing cat " +
+      " fashioned from tarnish resistant rhodium plated sterling silver " +
+      " and black heat-treated diamonds"
+    },
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=46484&userID=96241&productID=509908388",
+      title: "Sterling Silver Dangling Edward Gorey Cat Necklace",
+      image: "http://feeds2.yourstorewizards.com/2012/images/100x500/n4483.jpg",
+      description: "This whimsical cat has been adapted from Edward Gorey's cover illustrations for AMPHIGOREY."
+    },
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=46484&userID=96241&productID=509908992",
+      title: "Sterling Silver Faceted Black Onyx Cat Necklace",
+      image: "http://feeds2.yourstorewizards.com/2012/images/100x500/349ic21n.jpg",
+      description: "Feline lovers will adore this faceted Black Onyx cat pendant and cable chain necklace in sterling silver."
+    },
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=4349&userID=96241&productID=551941433",
+      title: "Glamour Puss Crystal Pendant Necklace",
+      image: "http://www.modernartisans.com/images/Product/icon/1035.jpg" ,
+      description: "Graced with an array of Swarovski crystals in bewitching " +
+      " blue, aqua, and green alongside rows of tiny turquoise gemstones, " +
+      " this glistening cat is the perfect mix of glee and glamour"
+    },
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=10669&userID=96241&productID=525700080",
+      title: "Sterling Silver Cat Pendant with White Cubic Zirconia and Necklace",
+      image: "http://aff.ysi.bz/assets/87/860/p0027586087.jpg",
+      description: ""
+    },
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=10669&userID=96241&productID=572780276",
+      title: "Sterling Silver Cat Pendant with Black Cubic Zircon and Necklace",
+      image: "http://aff.ysi.bz/assets/59/965/p0040496559.jpg",
+      description: ""
+    },
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=10669&userID=96241&productID=572787278",
+      title: "Sterling Silver Cat Pendant with Pink Crystal and Cubic Zircon and Necklace",
+      image: "http://aff.ysi.bz/assets/84/687/p0040268784.jpg",
+      description: ""
+    },
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=10669&userID=96241&productID=555269854",
+      title: "Sterling Silver Rose Gold Colored Cat Pendant and Necklace",
+      image: "http://aff.ysi.bz/assets/51/685/p0034868551.jpg",
+      description: ""
+    },
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=10669&userID=96241&productID=555275286",
+      title: "Sterling Silver Cat Pendant and Necklace",
+      image: "images/sterling-silver-cat-necklace.jpg",
+      description: ""
+    },
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=10669&userID=96241&productID=555278112",
+      title: "Sterling Silver Cat Outline with Whiskers Pendant and Necklace",
+      image: "images/cat-outline-necklace.jpg",
+      description: ""
+    }
+  ];
 });
