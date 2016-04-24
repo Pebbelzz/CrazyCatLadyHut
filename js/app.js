@@ -295,4 +295,29 @@ app.controller('catTrees', function($scope){
       description: ""
     }
   ];
+
+  $scope.catBracelets = [
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=4349&userID=96241&productID=551941434",
+      title: "Glamour Puss Crystal Bracelet",
+      image: "images/glamour-cat-bracelet.jpg",
+      description: "Graced with an array of Swarovski crystals in bewitching " +
+      " blue and green alongside turquoise and green opal gemstones, this " +
+      " glistening cat is the perfect mix of glee and glamour"
+    },
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=10669&userID=96241&productID=623682111",
+      title: "Cat Paradise Bracelet",
+      image: "images/cat-paradise.jpg",
+      description: ""
+    },
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=10669&userID=96241&productID=533499740",
+      title: "MIPENNA - Kitty Bracelet",
+      image: "http://aff.ysi.bz/assets/67/581/p0028758167.jpg",
+      description: "MIPENNA's surrealist accessories boast bright colors, " +
+      " animal charms and whimsical designs that tell a detailed story, " +
+      " and give each piece a fanciful, unexpected finish"
+    }
+  ];
 });
