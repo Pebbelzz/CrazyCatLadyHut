@@ -320,4 +320,45 @@ app.controller('catTrees', function($scope){
       " and give each piece a fanciful, unexpected finish"
     }
   ];
+
+  $scope.catClocks = [
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=6787&userID=96241&productID=494204902",
+      title: "Cheeks the Cat Clock Yardbirds Richard Kolb",
+      image: "images/cheeks-cat-clock.jpg",
+      description: "Due to the handcrafted nature of these pieces, no two are ever exactly alike."
+    },
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=6787&userID=96241&productID=516570064",
+      title: "Cat Clock with Mouse Pendulum",
+      image: "images/cat-clock-mouse.jpg",
+      description: "Created by artist Guenter Scholz each Sculpture has been " +
+      " individually handcrafted by cutting, bending and welding recycled " +
+      " steel to effectively portray the subject. "
+    },
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=6787&userID=96241&productID=546513415",
+      title: "Mouser Cat Clock",
+      image: "images/mouser-cat-clock.jpg",
+      description: "Made from an original design by Michelle Allen"
+    },
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=11284&userID=96241&productID=565313039",
+      title: "Metal Multicolor Cat Clock with Swinging Tail",
+      image: "images/color-cat-clock.jpg",
+      description: "The airbrushed colors and metal whiskers make this an interesting timepiece for any cat lover. "
+    },
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=4349&userID=96241&productID=497326371",
+      title: "Persian Cat Pendulum Clock ",
+      image: "images/persian-cat-clock.jpg",
+      description: "Made of lightweight wood, the fluffy white cat's tail-wagging pendulum always brings a smile."
+    },
+    {
+      link: "http://www.shareasale.com/m-pr.cfm?merchantID=11284&userID=96241&productID=565313042",
+      title: "Metal Orange Cat Clock with Swinging Tail",
+      image: "images/orange-cat-clock.jpg",
+      description: ""
+    }
+  ];
 });

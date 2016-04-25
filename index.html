@@ -37,43 +37,57 @@
             <ul class="nav nav-pills nav-stacked">
               <li class="category" ng-click="showHome = !showHome; showTrees=false;
                  showShelf = false; showCondo = false; showGrumpy = false;
-                 showhelloKitty = false; showNecklace = false; showBracelet = false;">
+                 showhelloKitty = false; showNecklace = false; showBracelet = false;
+                 showClock = false;">
                  <a href="#Home">Home</a>
                </li>
               <li class="category" ng-click="showHome = true; showTrees = true;
                  showShelf = false; showCondo = false; showGrumpy = false;
-                 showhelloKitty = false; showNecklace = false; showBracelet = false;">
+                 showhelloKitty = false; showNecklace = false; showBracelet = false;
+                 showClock = false;">
                  <a href="#catTrees">Cat Trees</a>
                </li>
               <li class="category" ng-click="showHome = true; showTrees = false;
                  showShelf = true; showCondo = false; showGrumpy = false;
-                 showhelloKitty = false; showNecklace = false; showBracelet = false;">
+                 showhelloKitty = false; showNecklace = false; showBracelet = false;
+                 showClock = false;">
                  <a href="#catShelf">Cat Shelves</a>
               </li>
               <li class="category" ng-click="showHome = true; showTrees = false;
                  showShelf = false; showCondo = true; showGrumpy = false;
-                 showhelloKitty = false; showNecklace = false; showBracelet = false;">
+                 showhelloKitty = false; showNecklace = false; showBracelet = false;
+                 showClock = false;">
                  <a href="#catCondos">Cat Condos</a>
                </li>
                <li class="category" ng-click="showHome = true; showTrees = false;
                   showShelf = false; showCondo = false; showGrumpy = true;
-                  showhelloKitty = false; showNecklace = false; showBracelet = false;">
+                  showhelloKitty = false; showNecklace = false; showBracelet = false;
+                  showClock = false;">
                   <a href="#grumpyCat">Grumpy Cat</a>
                 </li>
                <li class="category" ng-click="showHome = true; showTrees = false;
                    showShelf = false; showCondo = false; showGrumpy = false;
-                   showhelloKitty = true; showNecklace = false; showBracelet = false;">
+                   showhelloKitty = true; showNecklace = false; showBracelet = false;
+                   showClock = false;">
                    <a href="#helloKitty">Hello Kitty</a>
                </li>
                <li class="category" ng-click="showHome = true; showTrees = false;
                    showShelf = false; showCondo = false; showGrumpy = false;
-                   showhelloKitty = false; showNecklace = true; showBracelet = false;">
+                   showhelloKitty = false; showNecklace = true; showBracelet = false;
+                   showClock = false;">
                    <a href="#catNecklaces">Cat Necklaces</a>
                </li>
                <li class="category" ng-click="showHome = true; showTrees = false;
                    showShelf = false; showCondo = false; showGrumpy = false;
-                   showhelloKitty = false; showNecklace = false; showBracelet = true">
+                   showhelloKitty = false; showNecklace = false; showBracelet = true;
+                   showClock = false;">
                    <a href="#catBraclets">Cat Bracelets</a>
+               </li>
+               <li class="category" ng-click="showHome = true; showTrees = false;
+                   showShelf = false; showCondo = false; showGrumpy = false;
+                   showhelloKitty = false; showNecklace = false; showBracelet = false;
+                   showClock = true;">
+                   <a href="#catClocks">Cat Clocks</a>
                </li>
             </ul>
         </nav>
@@ -88,12 +102,13 @@
             <a href="#catCondos" ng-click="showHome = true;  showCondo = !showCondo;" >
                 <img src="images/cat-mouse-house.jpg">
             </a>
-            <a href="#catCondos" ng-click="showHome = true; showCondo = !showCondo;" >
+            <a href="#catTrees" ng-click="showHome = true; showTrees = !showTrees;" >
               <img src="images/purple-passion.jpg">
             </a>
             <a href="#catCondos" ng-click="showHome = true; showCondo = !showCondo;" >
               <img src="images/cat-castle.jpg">
             </a>
+
 
           </div>
         </div>
@@ -205,7 +220,26 @@
         </div>
       </div>
 
+      <div ng-show="showClock" ng-repeat="catClock in catClocks">
+        <div class="row productRow">
+          <div class="col-md-3">
+            <img class="cat-tree-image productImage" src={{catClock.image}} />
+          </div>
+          <div class="col-md-6">
+            <h4>{{catClock.title}}</h4>
+            <p class="col-md-12">{{catClock.description}}</p>
+          </div>
+          <div class="col-md-3 buttonInfo">
+            <a class="btn btn-primary moreInfo" href="{{catClock.link}}" target="_blank">More Info</a>
+          </div>
+        </div>
+      </div>
 
+
+    </div>
+
+    <div class="col-xs-12 text-center" id="footer">
+      Copyright CrazyCatLadyHut.com 2016
     </div>
   </div>
   </body>
