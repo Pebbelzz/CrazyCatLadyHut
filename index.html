@@ -32,8 +32,18 @@
     </div>
 
     <div class="container">
-      <sidebar class="col-md-2">
-        <nav layout="vertical">
+      <sidebar class="col-md-2 sideNav">
+        <nav layout="vertical" class="navbar">
+          <div class="navbar-header col-xs-12">
+            <button type="button" class="navbar-toggle collapsed" id="navButton" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand cata visible-xs-inline-block" href="#">Menu</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav nav-pills nav-stacked">
               <li class="category" ng-click="showHome = !showHome; showTrees=false;
                  showShelf = false; showCondo = false; showGrumpy = false;
@@ -90,6 +100,7 @@
                    <a href="#catClocks">Cat Clocks</a>
                </li>
             </ul>
+          </div>
         </nav>
       </sidebar>
 
@@ -97,16 +108,16 @@
         <div ng-hide="showHome">
           <div id="slides" class="col-md-8 col-md-offset-2">
             <a href="#catTrees" ng-click="showHome = true; showTrees = !showTrees;" >
-               <img src="images/silk-multi-level.jpg">
+               <img class="img-responsive" src="images/silk-multi-level.jpg">
             </a>
             <a href="#catCondos" ng-click="showHome = true;  showCondo = !showCondo;" >
-                <img src="images/cat-mouse-house.jpg">
+                <img class="img-responsive" src="images/cat-mouse-house.jpg">
             </a>
             <a href="#catTrees" ng-click="showHome = true; showTrees = !showTrees;" >
-              <img src="images/purple-passion.jpg">
+              <img class="img-responsive" src="images/purple-passion.jpg">
             </a>
             <a href="#catCondos" ng-click="showHome = true; showCondo = !showCondo;" >
-              <img src="images/cat-castle.jpg">
+              <img class="img-responsive" src="images/cat-castle.jpg">
             </a>
 
 
