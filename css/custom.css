@@ -61,3 +61,9 @@ sidebar{
 ul.slidejs-pagination{
   list-style: none;
 }
+
+footer{
+  height: 100px;
+  line-height: 100px;
+  font-size: 10px;
+}
