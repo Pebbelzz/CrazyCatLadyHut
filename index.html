@@ -110,16 +110,16 @@
         <div ng-hide="showHome">
           <div id="slides" class="col-sm-8 col-sm-offset-2">
             <a href="#catTrees" ng-click="showHome = true; showTrees = !showTrees;" >
-               <img class="img-responsive" src="images/silk-multi-level.jpg">
+               <img class="img-responsive" ng-src="images/silk-multi-level.jpg">
             </a>
             <a href="#catCondos" ng-click="showHome = true;  showCondo = !showCondo;" >
-                <img class="img-responsive" src="images/cat-mouse-house.jpg">
+                <img class="img-responsive" ng-src="images/cat-mouse-house.jpg">
             </a>
             <a href="#catTrees" ng-click="showHome = true; showTrees = !showTrees;" >
-              <img class="img-responsive" src="images/purple-passion.jpg">
+              <img class="img-responsive" ng-src="images/purple-passion.jpg">
             </a>
             <a href="#catCondos" ng-click="showHome = true; showCondo = !showCondo;" >
-              <img class="img-responsive" src="images/cat-castle.jpg">
+              <img class="img-responsive" ng-src="images/cat-castle.jpg">
             </a>
 
 
@@ -131,7 +131,7 @@
         <div ng-show="showTrees" ng-repeat="catTree in catTowers">
           <div class="row productRow">
             <div class="col-md-3">
-              <img class="cat-tree-image productImage" src={{catTree.image}} />
+              <img class="cat-tree-image productImage" ng-src={{catTree.image}} />
             </div>
             <div class="col-md-6">
               <h4>{{catTree.title}}</h4>
@@ -146,7 +146,7 @@
       <div ng-show="showShelf" ng-repeat="catShelf in catShelfs">
         <div class="row productRow">
           <div class="col-md-3">
-            <img class="cat-tree-image productImage" src={{catShelf.image}} />
+            <img class="cat-tree-image productImage" ng-src={{catShelf.image}} />
           </div>
           <div class="col-md-6">
             <h4>{{catShelf.title}}</h4>
@@ -161,7 +161,7 @@
       <div ng-show="showCondo" ng-repeat="catCondo in catCondos">
         <div class="row productRow">
           <div class="col-md-3">
-            <img class="cat-tree-image productImage" src={{catCondo.image}} />
+            <img class="cat-tree-image productImage" ng-src={{catCondo.image}} />
           </div>
           <div class="col-md-6">
             <h4>{{catCondo.title}}</h4>
@@ -176,7 +176,7 @@
       <div ng-show="showGrumpy" ng-repeat="grumpyCat in grumpyCats">
         <div class="row productRow">
           <div class="col-md-3">
-            <img class="cat-tree-image productImage" src={{grumpyCat.image}} />
+            <img class="cat-tree-image productImage" ng-src={{grumpyCat.image}} />
           </div>
           <div class="col-md-6">
             <h4>{{grumpyCat.title}}</h4>
@@ -191,7 +191,7 @@
       <div ng-show="showhelloKitty" ng-repeat="helloKitty in helloKittys">
         <div class="row productRow">
           <div class="col-md-3">
-            <img class="cat-tree-image productImage" src={{helloKitty.image}} />
+            <img class="cat-tree-image productImage" ng-src={{helloKitty.image}} />
           </div>
           <div class="col-md-6">
             <h4>{{helloKitty.title}}</h4>
@@ -206,7 +206,7 @@
       <div ng-show="showNecklace" ng-repeat="catNecklace in catNecklaces">
         <div class="row productRow">
           <div class="col-md-3">
-            <img class="cat-tree-image productImage" src={{catNecklace.image}} />
+            <img class="cat-tree-image productImage" ng-src={{catNecklace.image}} />
           </div>
           <div class="col-md-6">
             <h4>{{catNecklace.title}}</h4>
@@ -221,7 +221,7 @@
       <div ng-show="showBracelet" ng-repeat="catBracelet in catBracelets">
         <div class="row productRow">
           <div class="col-md-3">
-            <img class="cat-tree-image productImage" src={{catBracelet.image}} />
+            <img class="cat-tree-image productImage" ng-src={{catBracelet.image}} />
           </div>
           <div class="col-md-6">
             <h4>{{catBracelet.title}}</h4>
@@ -236,7 +236,7 @@
       <div ng-show="showClock" ng-repeat="catClock in catClocks">
         <div class="row productRow">
           <div class="col-md-3">
-            <img class="cat-tree-image productImage" src={{catClock.image}} />
+            <img class="cat-tree-image productImage" ng-src={{catClock.image}} />
           </div>
           <div class="col-md-6">
             <h4>{{catClock.title}}</h4>
